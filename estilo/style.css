@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'RotisBold';
+    src: url('../fontes/Rotis\ SemiSans\ W04\ Bold.ttf') format('truetype');
+    /*
+    Tipos de format ()
+    -opentype (otf)
+    -truetype (ttf)
+    embedded-opentype
+    -truetype-aat (Apple Advanced Typography)
+    -svg
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    margin: 10px auto;
+    max-width: 900px;
+    display: flex;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+h1 > img {
+    height: 110px;
+}
+
+nav {
+    right:0;
+    position: absolute;
+}
+
+nav > a {
+    padding: 3px;
+    margin-right: 5px;
+    display: block;
+    text-decoration: none;
+    font-family: 'RotisBold';
+    color: #444444;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: auto;
+    box-shadow: 6px 0px 8px 0px rgb(80 80 80 / 57%);
+    height: 465px;
+    width: 900px;
+    background-image: url("../imagens/layene-anteprojeto-4-13.jpg");
+    position:relative
+}
+
+main > ul {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main li {
+    padding: 3px;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+main li {
+    animation: Opacidade .7s backwards;
+    animation-delay: .3s;
+}
+
+@keyframes Opacidade {
+    from {
+        opacity: 0;
+        transform: translateY(-60px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
