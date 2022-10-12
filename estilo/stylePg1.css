@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'RotisExtraBold';
+    src: url('../fontes/Rotis\ SemiSans\ W04\ ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RotisRegular';
+    src: url('../fontes/Rotis\ SemiSans\ W04\ Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    margin: auto;
+    font-family: 'RotisExtraBold';
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    width: 66vw;
+    font-size: 2.3em;
+}
+
+main {
+    margin: auto;
+    width: 66vw;
+}
+
+section {
+    margin: 15px auto;
+    column-count: 3;
+    column-gap: 15px;
+}
+
+#casaDS {
+    display: inline-block;
+    position: relative;
+}
+
+#casaDS a > h2 {
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'RotisRegular';
+    font-size: 2.3em;
+    font-weight: lighter;
+    color: black;
+}
+
+
+article a > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 6px 0px 8px 0px rgb(80 80 80 / 57%);
+    opacity: 50%;
+}
+
+.linkDS:hover {
+    transform: scale(1.5);
+}
+
+article > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 6px 0px 8px 0px rgb(80 80 80 / 57%);
+    opacity: 50%;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 17vw;
+    display: inline-flex;
+}
+
+.rodape {
+    width: 45%;
+}
+
+.rodape:hover {
+    transform: scale(1.1);
+}
