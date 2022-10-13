@@ -16,9 +16,12 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    width: 100vw;
+:root {
+    --cor1: #A6A6A6;
+    --cor2: #737373;
+    --cor3: #404040;
+    --cor4: #262626;
+    --cor5: #0D0D0D;
 }
 
 h1 {
@@ -31,48 +34,40 @@ h1 {
     font-size: 2.3em;
 }
 
-main {
+h1 > span {
+    color: #A6A6A6;
+}
+
+section {
     margin: auto;
     width: 66vw;
     column-count: 3;
     column-gap: 15px;
 }
-
-li {
-    list-style-type: none;
+ul{
+    list-style: none;
 }
 
-li > h2 {
-    font-family: 'RotisRegular';
-    font-size: max(.9em, 1.5vw);
-    font-weight: lighter;
-    letter-spacing: .1em;
-    color: #A6A6A6; 
-}
-
-.miniaturas {
+.min {
     width: 21.3vw;
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 6px 2px 8px 0px rgb(80 80 80 / 57%);
-    display: block;
 }
 
-.miniaturas:hover {
-    transform: scale(1.4);
+.lbox {
+    visibility: hidden;
+    opacity: 0;
 }
 
-footer {
-    display: block;
-    position: absolute;
-    bottom: -50px;
-    left: 17vw;
-}
+.lbox:target {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 10, 0.856);
 
-.rodape {
-    width: max(110px, 15vw);
-}
-
-.rodape:hover {
-    transform: scale(1.1);
+    position: fixed;
 }
