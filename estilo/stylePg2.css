@@ -81,11 +81,13 @@ ul{
 .lbox {
     visibility: hidden;
     opacity: 0;
+    display: none;
 }
 
 .lbox:target {
     visibility: visible;
     opacity: 1;
+    display: inline;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -98,7 +100,7 @@ ul{
 .box_img {
     position: absolute;
     width: 95vw;
-    height: 1vw;
+    height: 100vh;
     margin: 8% auto 0;
     text-align: center;
 }
@@ -120,19 +122,19 @@ ul{
 #prev {
     position: relative;
     left: -6%;
-    bottom: 1500%;
+    bottom: 35%;
 }
 
 #next {
     position: relative;
     right: -6%;
-    bottom: 1500%;
+    bottom: 35%;
 }
 
 #close {
     position: relative;
     left: 80%;
-    bottom: 3400%;
+    bottom: 80%;
 }
 
 .rodape {
