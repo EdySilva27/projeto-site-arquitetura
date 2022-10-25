@@ -22,14 +22,14 @@
 header {
 
     margin: 10px auto;
-    max-width: 900px;
+    width: 66vw;
     display: flex;
     border-bottom: 2px solid black;
     position: relative;
 }
 
 h1 > img {
-    height: 110px;
+    max-width: 23vw;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav > a {
     text-decoration: none;
     font-family: 'RotisBold';
     color: #444444;
-    font-size: 1.1em;
+    font-size: clamp(.3em, .5em + 1vw, 1.1em);
     letter-spacing: .1em;
 }
 
@@ -55,8 +55,8 @@ a:hover {
 main {
     margin: auto;
     box-shadow: 6px 0px 8px 0px rgb(80 80 80 / 57%);
-    height: 465px;
-    width: 900px;
+    height: 75vh;
+    width: 66vw;
     background-image: url("../imagens/layene-anteprojeto-4-13.jpg");
     position:relative
 }
